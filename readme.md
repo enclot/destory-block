@@ -6,18 +6,17 @@ I implemented polygon-based destruction in Godot 4.6.3.
 
 The polygon sizes are automatically determined based on the loaded image texture.
 
-The number of subdivisions can be configured via the Inspector.
+The number of subdivisions can be configured in the Inspector.
 
 
 
-Polygon subdivision method:
+Polygon subdivision method
 
 1. Generate random seed points.
+2. Assign each grid point to its nearest seed point.
+3. Generate a polygon for each region using `convex_hull()`.
 
-2. Assign grid points to the nearest seed point.
-3. Enclose them using `convex_hull()`.
-
-I am consulting with AI regarding the subdivision method.
+I am currently discussing ways to improve the subdivision method with an AI.
 
 
 
