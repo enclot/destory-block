@@ -4,7 +4,7 @@ extends RigidBody2D
 
 const SHARD_SCENE = preload("res://shard.tscn")
 
-@export var divisions : int = 20
+@export var divisions : int = 10
 @export var impulse_force : float = 550.0
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
@@ -80,8 +80,8 @@ func explode_into_shards():
 	var corners = [Vector2(0,0), Vector2(size.x, 0), Vector2(size.x, size.y), Vector2(0, size.y)]
 	
 	# 画像全体を細かく走査して頂点を集める（解像度）
-	var steps_x = 10
-	var steps_y = 10
+	var steps_x = 20
+	var steps_y = 20
 	var all_points = PackedVector2Array(corners)
 	for y in range(steps_y + 1):
 		for x in range(steps_x + 1):
