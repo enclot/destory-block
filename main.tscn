@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bq7kdeo33jp58"]
+
+[ext_resource type="Script" uid="uid://dm17xycb2yuok" path="res://scripts/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bw5il0y45twdi" path="res://distructible_block.tscn" id="2_0xm2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(1198, 49)
+
+[node name="Main" type="Node2D" unique_id=229286656]
+script = ExtResource("1_0xm2m")
+
+[node name="DistructibleBlock" parent="." unique_id=1012751369 instance=ExtResource("2_0xm2m")]
+position = Vector2(320, 448)
+
+[node name="DistructibleBlock2" parent="." unique_id=2047868388 instance=ExtResource("2_0xm2m")]
+position = Vector2(320, 320)
+
+[node name="DistructibleBlock3" parent="." unique_id=1815765846 instance=ExtResource("2_0xm2m")]
+position = Vector2(320, 192)
+
+[node name="DistructibleBlock4" parent="." unique_id=1845820243 instance=ExtResource("2_0xm2m")]
+position = Vector2(448, 256)
+
+[node name="DistructibleBlock5" parent="." unique_id=1590897891 instance=ExtResource("2_0xm2m")]
+position = Vector2(448, 128)
+
+[node name="DistructibleBlock6" parent="." unique_id=1161247490 instance=ExtResource("2_0xm2m")]
+position = Vector2(448, 0)
+
+[node name="DistructibleBlock7" parent="." unique_id=770773160 instance=ExtResource("2_0xm2m")]
+position = Vector2(576, 192)
+
+[node name="DistructibleBlock8" parent="." unique_id=2034063811 instance=ExtResource("2_0xm2m")]
+position = Vector2(576, 320)
+
+[node name="DistructibleBlock9" parent="." unique_id=81450764 instance=ExtResource("2_0xm2m")]
+position = Vector2(576, 448)
+
+[node name="DistructibleBlock10" parent="." unique_id=1408577443 instance=ExtResource("2_0xm2m")]
+position = Vector2(448, 448)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1359450634]
+position = Vector2(50, 132)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=861529148]
+position = Vector2(567, 419.5)
+shape = SubResource("RectangleShape2D_h2yge")

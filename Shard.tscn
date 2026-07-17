@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c0515uqfl6i7c"]
+
+[ext_resource type="Script" uid="uid://cahqrmvkcj5vg" path="res://scripts/shard.gd" id="1_5jqdw"]
+
+[node name="Shard" type="RigidBody2D" unique_id=17247596]
+script = ExtResource("1_5jqdw")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=830609135]
+polygon = PackedVector2Array(0, 0, 21, 0, 19, 17, 0, 17)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1380159557]

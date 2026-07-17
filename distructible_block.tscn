@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bw5il0y45twdi"]
+
+[ext_resource type="Script" uid="uid://b788oghlbbt56" path="res://scripts/distructible_block.gd" id="1_aqonn"]
+[ext_resource type="Texture2D" uid="uid://cmdikji24k33m" path="res://icon.svg" id="2_d74lw"]
+
+[node name="DistructibleBlock" type="RigidBody2D" unique_id=1012751369 groups=["block"]]
+script = ExtResource("1_aqonn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1536082441]
+texture = ExtResource("2_d74lw")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1652852510]
+color = Color(1, 1, 1, 0)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=70737313]
