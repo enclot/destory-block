@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dm17xycb2yuok" path="res://scripts/main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bw5il0y45twdi" path="res://distructible_block.tscn" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://ce647q6t7lrwc" path="res://snakeSlime.png" id="3_h2yge"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
 size = Vector2(1198, 49)
@@ -38,6 +39,8 @@ position = Vector2(576, 448)
 
 [node name="DistructibleBlock10" parent="." unique_id=1408577443 instance=ExtResource("2_0xm2m")]
 position = Vector2(448, 448)
+impulse_force = 100.0
+texture = ExtResource("3_h2yge")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1359450634]
 position = Vector2(50, 132)
